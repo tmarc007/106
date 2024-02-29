@@ -1,0 +1,22 @@
+html, body{
+    margin: 0px;
+}
+
+main {
+    display: flex;
+    height: 100vh;
+}
+
+#list{
+    background-color: rgb(201, 163, 233);
+    flex: 3;
+}
+#form{
+    background-color: blanchedalmond;
+    flex: 3;
+}
+
+/*this wont work bc of bootstrap */
+.btn btn-sm btn-primary { 
+    color: black;
+}
