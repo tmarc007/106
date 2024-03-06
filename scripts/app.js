@@ -42,7 +42,23 @@ function testRequest() {
     },
   });
 }
-
+$(document).ready(function() {
+  $('#btnDeleteAll').click(function() {
+    // Send AJAX DELETE request
+    $.ajax({
+      type: 'DELETE',
+      url: 'path/to/delete/tasks', // Replace with the appropriate URL for deleting tasks
+      success: function(response) {
+        console.log('All tasks deleted successfully');
+        // Optionally, you can clear the task list or perform additional actions
+      },
+      error: function(xhr, status, error) {
+        console.error('Error deleting tasks:', error);
+        // Handle the error case
+      }
+    });
+  });
+});
 function init() {
   //Loads 2nd
   console.log("this is a task manager"); //3rd
